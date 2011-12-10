@@ -1,0 +1,54 @@
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="simple"
+ZSH_THEME="nebirhos"
+
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
+
+# Comment this out to disable weekly auto-update checks
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
+
+# Uncomment following line if you want to disable autosetting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(osx ruby rails rvm git)
+
+source $ZSH/oh-my-zsh.sh
+
+# Customize to your needs...
+
+# RVM installation
+
+export CC=gcc-4.2
+
+[[ -s "/Users/lang/.rvm/scripts/rvm" ]] && source "/Users/lang/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+cd .
+
+# No shared history
+unsetopt share_history
+
+# directory aliases
+
+alias -g cyrtheme="~/Dropbox/Projects/CreateYourReality/updatedsite/phase2/cyr/wp-content/themes/cyr"
+alias -g cyrproject="~/Dropbox/Projects/CreateYourReality/"
+alias -g cyrwp="~/Dropbox/Projects/CreateYourReality/updatedsite/phase2/cyr/"
+
+# fix upgrading error https://github.com/robbyrussell/oh-my-zsh/issues/549
+export ZSH=$HOME/.oh-my-zsh
+
+# more git shortcuts
+alias gst='git status'
+compdef _git gst=git-status
+

@@ -45,9 +45,6 @@ alias -g cyrtheme="~/Dropbox/Projects/CreateYourReality/updatedsite/phase2/cyr/w
 alias -g cyrproject="~/Dropbox/Projects/CreateYourReality/"
 alias -g cyrwp="~/Dropbox/Projects/CreateYourReality/updatedsite/phase2/cyr/"
 
-# fix upgrading error https://github.com/robbyrussell/oh-my-zsh/issues/549
-export ZSH=$HOME/.oh-my-zsh
-
 # more git shortcuts
 alias gst='git status'
 compdef _git gst=git-status

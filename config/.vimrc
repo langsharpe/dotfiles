@@ -1,19 +1,21 @@
-" Fix to get rvm to work from within vi
-set shell=/bin/sh
-
-"2 character tabs. No tab characters
-set tabstop=2
-set shiftwidth=2
-set expandtab
+" Turn on filetype indenting and specific settings
+filetype indent on
+filetype plugin on
 
 " Automatically indent a new line the same amount of characters as the current line
 set autoindent
+
+" Turn tab characters into spaces
+set expandtab
+
+" Remove any triling whitespace frmo every line
+autocmd BufWritePre * :%s/\s\+$//e
 
 " highlight search results 
 set hls
 
 " line numbers
-set number
+"set number
 
 " incremental search - search as you type
 set incsearch
@@ -41,4 +43,20 @@ augroup resCur
   autocmd!
   autocmd BufWinEnter * call ResCur()
 augroup END
+
+" Mad vi tinkering
+
+" Cancel insert mode ofter 30 seconds
+au CursorHoldI * stopi
+set updatetime=30000
+
+" Disable the arrow keys
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
 

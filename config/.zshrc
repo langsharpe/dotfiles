@@ -6,7 +6,6 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="simple"
-ZSH_THEME="nebirhos"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -22,7 +21,7 @@ ZSH_THEME="nebirhos"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx ruby rails rvm git)
+plugins=(ruby rails rvm git python vundle)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,13 +38,34 @@ cd .
 # No shared history
 unsetopt share_history
 
-# directory aliases
+# more git shortcuts
+alias gst='git status'
+compdef _git gst=git-status
 
+alias gd='git diff'
+compdef _git gd=git-status  
+
+alias gai='git add -i'
+compdef _git gai=git-add  
+
+# Repetitive lol tasks
+alias icanhas='sudo apt-get install'
+
+# virtualenvwrapper installation
+export WORKON_HOME=~/.pyenvs
+[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
+
+# Project specific
+
+# Create Your Reality
 alias -g cyrtheme="~/Dropbox/Projects/CreateYourReality/updatedsite/phase2/cyr/wp-content/themes/cyr"
 alias -g cyrproject="~/Dropbox/Projects/CreateYourReality/"
 alias -g cyrwp="~/Dropbox/Projects/CreateYourReality/updatedsite/phase2/cyr/"
 
-# more git shortcuts
-alias gst='git status'
-compdef _git gst=git-status
+# WagezWindows
+alias -g wz="/home/langs/Projects/wagezwindow/wagezwindow/"
+alias WW='WagezWindow.py --logging=debug'
+alias WB='python setup.py build --force'
+alias WI='python setup.py install'
+alias WT='python -m unittest discover'
 

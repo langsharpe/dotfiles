@@ -1,7 +1,7 @@
 #!/bin/sh
 CONFIG_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/config"
 
-for SRC_FILE in $( find $CONFIG_DIR -type f -depth 1 )
+for SRC_FILE in $( find $CONFIG_DIR \( -type f -or -type d \) -and -depth 1 )
 do
   echo $SRC_FILE
   DEST_FILE=~/$( basename $SRC_FILE)

@@ -35,10 +35,10 @@ alias gst='git status'
 compdef _git gst=git-status
 
 alias gd='git diff'
-compdef _git gd=git-status  
+compdef _git gd=git-status
 
 alias gai='git add -i'
-compdef _git gai=git-add  
+compdef _git gai=git-add
 
 # Repetitive lol tasks
 alias icanhas='sudo apt-get install'
@@ -61,3 +61,6 @@ alias WB='python setup.py build --force'
 alias WI='python setup.py install'
 alias WT='python -m unittest discover'
 
+# HomeMachine
+
+alias -g Pr='~/Dropbox/Projects'

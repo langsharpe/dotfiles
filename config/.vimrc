@@ -23,6 +23,8 @@ set incsearch
 " Turn on syntax highlighting
 syntax on
 
+" Use ctags
+set tags =~/ctags
 
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files

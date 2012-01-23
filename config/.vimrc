@@ -1,3 +1,16 @@
+" Leave vi behind
+set nocompatible
+
+""""" Vundle installation
+filetype on
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'tpope/vim-rails'
+
 " Turn on filetype indenting and specific settings
 filetype indent on
 filetype plugin on
@@ -11,7 +24,7 @@ set expandtab
 " Remove any triling whitespace frmo every line
 autocmd BufWritePre * :%s/\s\+$//e
 
-" highlight search results 
+" highlight search results
 set hls
 
 " line numbers

@@ -11,7 +11,7 @@ set expandtab
 " Remove any triling whitespace frmo every line
 autocmd BufWritePre * :%s/\s\+$//e
 
-" highlight search results 
+" highlight search results
 set hls
 
 " line numbers

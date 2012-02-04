@@ -4,8 +4,8 @@ set nocompatible
 """"" Vundle installation
 filetype on
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vundle/vundle
+call vundle#rc('~/.vundle/')
 
 Bundle 'gmarik/vundle'
 

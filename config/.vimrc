@@ -75,3 +75,7 @@ noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
 
+
+" Filetypes
+au BufNewFile,BufRead *.mako set ft=mako
+

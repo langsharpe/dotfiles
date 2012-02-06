@@ -1,6 +1,9 @@
 " Leave vi behind
 set nocompatible
 
+" Set the leader character to comma
+let mapleader = ","
+
 """"" Vundle installation
 filetype on
 filetype off
@@ -74,4 +77,13 @@ noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
+
+noremap <C-j> }
+noremap <C-k> {
+
+noremap <Leader>j <C-d>
+noremap <Leader>k <C-u>
+
+noremap <Leader>J <C-f>
+noremap <Leader>K <C-b>
 

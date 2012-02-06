@@ -87,3 +87,6 @@ noremap <Leader>k <C-u>
 noremap <Leader>J <C-f>
 noremap <Leader>K <C-b>
 
+" Filetypes
+au BufNewFile,BufRead *.mako set ft=mako
+

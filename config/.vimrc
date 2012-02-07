@@ -75,6 +75,8 @@ noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
 
+" Make the cursor stay still when switching back to normal mode
+inoremap <silent> <Esc> <ESC>`^
 
 " Filetypes
 au BufNewFile,BufRead *.mako set ft=mako

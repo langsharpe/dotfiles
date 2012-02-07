@@ -56,7 +56,7 @@ alias -g cyrwp="~/Dropbox/Projects/CreateYourReality/updatedsite/phase2/cyr/"
 
 # WagezWindows
 alias -g wz="/home/langs/Projects/wagezwindow/wagezwindow/"
-alias WW='WagezWindow.py --logging=debug'
+alias WW='JumboPayroll.py --logging=debug'
 alias WB='python setup.py build --force'
 alias WI='python setup.py install'
 alias WT='python -m unittest discover'

@@ -1,6 +1,9 @@
 " Leave vi behind
 set nocompatible
 
+" Set the leader character to comma
+let mapleader = ","
+
 """"" Vundle installation
 filetype on
 filetype off
@@ -77,6 +80,15 @@ noremap   <Right>  <NOP>
 
 " Make the cursor stay still when switching back to normal mode
 inoremap <silent> <Esc> <ESC>`^
+
+noremap <C-j> }
+noremap <C-k> {
+
+noremap <Leader>j <C-d>
+noremap <Leader>k <C-u>
+
+noremap <Leader>J <C-f>
+noremap <Leader>K <C-b>
 
 " Filetypes
 au BufNewFile,BufRead *.mako set ft=mako

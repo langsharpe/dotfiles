@@ -86,17 +86,11 @@ noremap   <Right>  <NOP>
 " Make the cursor stay still when switching back to normal mode
 inoremap <silent> <Esc> <ESC>`^
 
-noremap <C-j> }
-noremap <C-k> {
-
-noremap <Leader>j <C-d>
-noremap <Leader>k <C-u>
-
-noremap <Leader>J <C-f>
-noremap <Leader>K <C-b>
+noremap <C-j> <C-d>
+noremap <C-k> <C-u>
 
 " Change a word
-noremap C bcw
+noremap <Leader>c bcw
 
 " Filetypes
 au BufNewFile,BufRead *.mako set ft=mako

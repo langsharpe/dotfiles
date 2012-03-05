@@ -40,6 +40,8 @@ compdef _git gd=git-status
 alias gai='git add -i'
 compdef _git gai=git-add
 
+alias gg='git log --graph --oneline -n 20'
+
 # Repetitive lol tasks
 alias icanhas='sudo apt-get install'
 

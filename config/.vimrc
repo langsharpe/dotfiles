@@ -86,8 +86,12 @@ noremap   <Right>  <NOP>
 " Make the cursor stay still when switching back to normal mode
 inoremap <silent> <Esc> <ESC>`^
 
+" Spatial navigation
 noremap <C-j> <C-d>
 noremap <C-k> <C-u>
+
+noremap <C-h> b
+noremap <C-l> w
 
 " Change a word
 noremap <Leader>c bcw

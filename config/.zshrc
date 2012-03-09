@@ -41,6 +41,7 @@ alias gai='git add -i'
 compdef _git gai=git-add
 
 alias gg='git log --graph --oneline -n 20'
+compdef _git gg=git-log
 
 # Repetitive lol tasks
 alias icanhas='sudo apt-get install'

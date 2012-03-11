@@ -1,7 +1,7 @@
-
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
+set expandtab
 
 " Indent after an open paren: >
 let g:pyindent_open_paren = '&sw'

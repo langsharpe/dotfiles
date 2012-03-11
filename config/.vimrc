@@ -21,8 +21,11 @@ filetype plugin on
 " Automatically indent a new line the same amount of characters as the current line
 set autoindent
 
-" Turn tab characters into spaces
-set expandtab
+" Use 4 characters and actual tabs by default
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set noexpandtab
 
 " Remove any triling whitespace frmo every line
 autocmd BufWritePre * :%s/\s\+$//e

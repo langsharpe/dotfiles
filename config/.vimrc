@@ -11,8 +11,8 @@ set rtp+=~/.vundle/vundle
 call vundle#rc('~/.vundle/')
 
 Bundle 'gmarik/vundle'
-
 Bundle 'tpope/vim-rails'
+Bundle 'altercation/vim-colors-solarized'
 
 " Turn on filetype indenting and specific settings
 filetype indent on

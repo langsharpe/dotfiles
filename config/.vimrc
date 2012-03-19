@@ -15,6 +15,12 @@ Bundle 'tpope/vim-rails'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'git://git.wincent.com/command-t.git'
 
+" Command-T Fix the height of the file window
+let g:CommandTMaxHeight = 20
+let g:CommandTMinHeight = 20
+
+set wildignore+=build/*
+
 " Turn on filetype indenting and specific settings
 filetype indent on
 filetype plugin on

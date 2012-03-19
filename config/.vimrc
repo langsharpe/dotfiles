@@ -13,6 +13,7 @@ call vundle#rc('~/.vundle/')
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-rails'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'git://git.wincent.com/command-t.git'
 
 " Turn on filetype indenting and specific settings
 filetype indent on

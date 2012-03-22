@@ -105,6 +105,9 @@ inoremap <silent> <Esc> <ESC>`^
 noremap <C-j> <C-d>
 noremap <C-k> <C-u>
 
+noremap <Leader>j G
+noremap <Leader>k gg
+
 noremap <C-h> b
 noremap <C-l> w
 

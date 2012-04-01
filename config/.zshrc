@@ -43,8 +43,19 @@ compdef _git gai=git-add
 alias gg='git log --graph --oneline -n 20'
 compdef _git gg=git-log
 
-# Repetitive lol tasks
-alias icanhas='sudo apt-get install'
+# OS specific aliases
+if [ `uname` = "Darwin" ]
+then
+	# Macvim
+	alias vi='mvim -v'
+	alias vim='mvim -v'
+	alias gvim=mvim
+	# Repetitive lol tasks
+	alias icanhas='brew install'
+else # Linux
+	# Repetitive lol tasks
+	alias icanhas='sudo apt-get install'
+fi
 
 # virtualenvwrapper installation
 export WORKON_HOME=~/.pyenvs

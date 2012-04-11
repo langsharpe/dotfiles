@@ -114,6 +114,9 @@ noremap <Leader>k gg
 noremap <C-h> b
 noremap <C-l> w
 
+noremap <Leader>h ^
+noremap <Leader>l $
+
 " Change a word
 noremap <Leader>c bcw
 

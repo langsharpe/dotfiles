@@ -54,10 +54,9 @@ export WORKON_HOME=~/.pyenvs
 
 # WagezWindows
 alias -g wz="/home/langs/Projects/wagezwindow/wagezwindow/"
-alias WW='JumboPayroll.py --logging=debug'
-alias WB='python setup.py build --force'
-alias WI='python setup.py install'
-alias WT='python -m unittest discover'
+alias WW='payroll.py --logging=debug'
+alias WI='python setup.py clean --all; python setup.py install --force'
+alias WT='./run_tests.py discover'
 
 # HomeMachine
 

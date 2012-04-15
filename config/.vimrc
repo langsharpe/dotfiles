@@ -61,6 +61,9 @@ set tags =~/ctags
 set colorcolumn=81
 hi ColorColumn ctermbg=lightgrey
 
+" Keep text in the same place when spliting a window
+set splitbelow
+set splitright
 
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files
@@ -110,6 +113,9 @@ noremap <Leader>k gg
 
 noremap <C-h> b
 noremap <C-l> w
+
+noremap <Leader>h ^
+noremap <Leader>l $
 
 " Change a word
 noremap <Leader>c bcw

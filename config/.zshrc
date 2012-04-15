@@ -7,25 +7,14 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="simple"
 
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
 # Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(ruby rails rvm git python vundle)
 
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
 
 # No shared history
 unsetopt share_history
@@ -62,11 +51,6 @@ export WORKON_HOME=~/.pyenvs
 [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
 
 # Project specific
-
-# Create Your Reality
-alias -g cyrtheme="~/Dropbox/Projects/CreateYourReality/updatedsite/phase2/cyr/wp-content/themes/cyr"
-alias -g cyrproject="~/Dropbox/Projects/CreateYourReality/"
-alias -g cyrwp="~/Dropbox/Projects/CreateYourReality/updatedsite/phase2/cyr/"
 
 # WagezWindows
 alias -g wz="/home/langs/Projects/wagezwindow/wagezwindow/"

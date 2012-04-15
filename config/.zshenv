@@ -6,3 +6,5 @@ export CC=gcc-4.2
 
 cd .
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -42,6 +42,7 @@ set hls
 
 " line numbers
 "set number
+set relativenumber
 
 " incremental search - search as you type
 set incsearch

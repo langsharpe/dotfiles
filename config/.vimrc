@@ -14,6 +14,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-rails'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'scrooloose/nerdcommenter'
 
 " Command-T Fix the height of the file window
 let g:CommandTMaxHeight = 20
@@ -117,9 +118,6 @@ noremap <C-l> w
 
 noremap <Leader>h ^
 noremap <Leader>l $
-
-" Change a word
-noremap <Leader>c bcw
 
 " Filetypes
 au BufNewFile,BufRead *.mako set ft=mako

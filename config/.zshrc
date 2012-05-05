@@ -60,4 +60,4 @@ alias WT='./run_tests.py discover'
 
 # HomeMachine
 
-alias -g Pr='~/Dropbox/Projects'
+alias -g p='~/Dropbox/Projects'

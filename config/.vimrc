@@ -15,6 +15,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-surround'
 
 " Command-T Fix the height of the file window
 let g:CommandTMaxHeight = 20

@@ -35,20 +35,29 @@ compdef _git gg=git-log
 # OS specific aliases
 if [ `uname` = "Darwin" ]
 then
+
 	# Macvim
 	alias vi='mvim -v'
 	alias vim='mvim -v'
 	alias gvim=mvim
+
 	# Repetitive lol tasks
 	alias icanhas='brew install'
+
+	# Homebrew
+	PATH=/usr/local/bin:/usr/local/share/python:$PATH
+
 else # Linux
+
 	# Repetitive lol tasks
 	alias icanhas='sudo apt-get install'
+
 fi
 
 # virtualenvwrapper installation
 export WORKON_HOME=~/.pyenvs
 [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
+[[ -s "/usr/local/share/python/virtualenvwrapper.sh" ]] && source "/usr/local/share/python/virtualenvwrapper.sh"
 
 # Project specific
 

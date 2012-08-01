@@ -61,10 +61,12 @@ fi
 # Project specific
 
 # WagezWindows
-alias -g wz="/home/langs/Projects/wagezwindow/wagezwindow/"
-alias WW='payroll.py --logging=debug'
-alias WI='python setup.py clean --all; python setup.py install --force'
+alias -g wz="~/Projects/lightning_payroll/payroll"
+alias WW='python $VIRTUAL_ENV/bin/payroll.py --logging=debug'
+alias WC='python setup.py clean --all'
+alias WI='python setup.py install'
 alias WT='./run_tests.py discover'
+alias WTT='./run_tests.py discover -p'
 
 # HomeMachine
 

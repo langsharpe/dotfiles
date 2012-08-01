@@ -49,6 +49,9 @@ set relativenumber
 " incremental search - search as you type
 set incsearch
 
+" Turn off html rendering i.e. <em> <b>...
+let html_no_rendering=1
+
 " Turn on syntax highlighting
 syntax on
 

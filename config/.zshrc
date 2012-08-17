@@ -57,6 +57,8 @@ fi
 # virtualenvwrapper installation
 [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
 [[ -s "/usr/local/share/python/virtualenvwrapper.sh" ]] && source "/usr/local/share/python/virtualenvwrapper.sh"
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS="--system-site-packages"
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 # Project specific
 

@@ -30,6 +30,9 @@ filetype plugin on
 " Automatically indent a new line the same amount of characters as the current line
 set autoindent
 
+" Always display a status line
+set laststatus=2
+
 " Use 4 characters and actual tabs by default
 set shiftwidth=4
 set tabstop=4
@@ -43,8 +46,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 set hls
 
 " line numbers
-"set number
-set relativenumber
+set number
 
 " incremental search - search as you type
 set incsearch

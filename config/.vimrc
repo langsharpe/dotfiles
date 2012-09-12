@@ -67,7 +67,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set tags =~/ctags
 
 " Create a guideline on the 81st character
-set colorcolumn=81
+set colorcolumn=101
 hi ColorColumn ctermbg=lightgrey
 
 " Keep text in the same place when spliting a window

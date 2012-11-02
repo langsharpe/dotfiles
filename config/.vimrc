@@ -17,12 +17,13 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-surround'
+Bundle 'ack.vim'
 
 " Command-T Fix the height of the file window
 let g:CommandTMaxHeight = 20
 let g:CommandTMinHeight = 20
 
-set wildignore+=build/*
+set wildignore+=build/*,dist/*,*.pyc,*.png,*.jpg,*.dia
 
 " Turn on filetype indenting and specific settings
 filetype indent on

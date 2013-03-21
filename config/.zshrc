@@ -47,6 +47,9 @@ then
 	# Homebrew
 	PATH=/usr/local/bin:/usr/local/share/python:$PATH
 
+	# Give me my Ctrl-S
+	stty -ixon -ixoff
+
 else # Linux
 
 	# Repetitive lol tasks
@@ -71,5 +74,4 @@ alias WT='./run_tests.py discover'
 alias WTT='./run_tests.py discover -p'
 
 # HomeMachine
-
 alias -g p='~/Dropbox/Projects'

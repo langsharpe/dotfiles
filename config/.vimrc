@@ -67,7 +67,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 " Use ctags
 set tags =~/ctags
 
-" Create a guideline on the 81st character
+" Create a guideline on the 101st character
 set colorcolumn=101
 hi ColorColumn ctermbg=lightgrey
 
@@ -106,6 +106,7 @@ noremap   <Right>  <NOP>
 
 " Make the cursor stay still when switching back to normal mode
 inoremap <silent> <Esc> <ESC>`^
+inoremap <silent> <C-c> <ESC>`^
 
 " Spatial navigation
 noremap <C-j> <C-d>

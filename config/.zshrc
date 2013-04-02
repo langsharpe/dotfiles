@@ -29,7 +29,7 @@ compdef _git gd=git-status
 alias gai='git add -i'
 compdef _git gai=git-add
 
-alias gg='git log --graph --oneline -n 20'
+alias gg='git log --graph --oneline -n 20 --decorate'
 compdef _git gg=git-log
 
 # OS specific aliases

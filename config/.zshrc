@@ -32,6 +32,8 @@ compdef _git gai=git-add
 alias gg='git log --graph --oneline -n 20 --decorate'
 compdef _git gg=git-log
 
+git config --global --add color.ui true
+
 # OS specific aliases
 if [ `uname` = "Darwin" ]
 then
@@ -63,15 +65,4 @@ fi
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS="--system-site-packages"
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
-# Project specific
-
-# WagezWindows
-alias -g wz="~/Projects/lightning_payroll/payroll"
-alias WW='python $VIRTUAL_ENV/bin/payroll.py --logging=debug'
-alias WC='python setup.py clean --all'
-alias WI='python setup.py --quiet install'
-alias WT='./run_tests.py discover'
-alias WTT='./run_tests.py discover -p'
-
-# HomeMachine
 alias -g p='~/Dropbox/Projects'

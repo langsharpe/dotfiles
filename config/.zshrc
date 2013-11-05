@@ -23,9 +23,6 @@ unsetopt share_history
 alias gst='git status'
 compdef _git gst=git-status
 
-alias gd='git diff'
-compdef _git gd=git-status
-
 alias gai='git add -i'
 compdef _git gai=git-add
 
@@ -33,6 +30,10 @@ alias gg='git log --graph --oneline -n 20 --decorate'
 compdef _git gg=git-log
 
 git config --global --add color.ui true
+
+# bundle shortcuts
+alias be='bundle exec'
+alias bi='bundle install'
 
 # OS specific aliases
 if [ `uname` = "Darwin" ]
@@ -47,7 +48,7 @@ then
 	alias icanhas='brew install'
 
 	# Homebrew
-	PATH=/usr/local/bin:/usr/local/share/python:$PATH
+	export PATH=/usr/local/bin:/usr/local/share/python:$PATH
 
 	# Give me my Ctrl-S
 	stty -ixon -ixoff
@@ -65,4 +66,21 @@ fi
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS="--system-site-packages"
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
+# rbenv installation
+export PATH="/usr/local/sbin:/usr/local/bin:$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# Project specific
+
+# HomeMachine
 alias -g p='~/Dropbox/Projects'
+
+# EDH
+
+alias run_core_au='be script/server webrick -p 3000'
+alias run_core_uk='be script/server webrick -p 3100'
+alias run_admin_au='be script/server -p 3002'
+alias run_admin_uk='be script/server -p 3102'
+alias run_heroix_au='be script/server -p 3001'
+alias run_heroix_uk='be script/server -p 3101'
+

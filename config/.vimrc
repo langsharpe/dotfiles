@@ -34,11 +34,14 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
+" Ignore source control directories in auto completion (thanks @nippysaurus)
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|svn)$'
+
 " Command-T Fix the height of the file window
 let g:CommandTMaxHeight = 20
 let g:CommandTMinHeight = 20
 
-set wildignore+=build/*,dist/*,*.pyc,*.png,*.jpg,*.dia
+set wildignore+=build/*,dist/*,*.pyc,*.png,*.jpg,*.dia,*.
 
 " Turn on filetype indenting and specific settings
 filetype indent on
@@ -82,8 +85,8 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 " Use ctags
 set tags =~/ctags
 
-" Create a guideline on the 101st character
-set colorcolumn=101
+" Create a guideline on the 81st character
+set colorcolumn=81
 hi ColorColumn ctermbg=lightgrey
 
 " Keep text in the same place when spliting a window

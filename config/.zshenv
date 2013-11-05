@@ -8,3 +8,6 @@ cd .
 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+PATH=/usr/local/sbin:/usr/local/bin:$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"

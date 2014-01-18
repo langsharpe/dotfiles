@@ -12,7 +12,7 @@ DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(ruby rails rvm git python vundle sublime)
+plugins=(ruby rails git python vundle sublime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -60,9 +60,10 @@ else # Linux
 fi
 
 # virtualenvwrapper installation
-[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
-[[ -s "/usr/local/share/python/virtualenvwrapper.sh" ]] && source "/usr/local/share/python/virtualenvwrapper.sh"
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS="--system-site-packages"
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+# Uninstalled pyton for now.
+#[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
+#[[ -s "/usr/local/share/python/virtualenvwrapper.sh" ]] && source "/usr/local/share/python/virtualenvwrapper.sh"
+#export VIRTUALENVWRAPPER_VIRTUALENV_ARGS="--system-site-packages"
+#export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 alias -g p='~/Dropbox/Projects'

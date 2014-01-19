@@ -54,7 +54,7 @@ then
 	alias icanhas='brew install'
 
 	# Homebrew
-	export PATH=/usr/local/bin:/usr/local/share/python:$PATH
+	export PATH=/usr/local/bin:$PATH
 
 	# Give me my Ctrl-S
 	stty -ixon -ixoff

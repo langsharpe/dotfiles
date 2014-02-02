@@ -29,6 +29,12 @@ compdef _git gai=git-add
 alias gg='git log --graph --oneline -n 20 --decorate'
 compdef _git gg=git-log
 
+alias gf='git fetch'
+
+alias gom='git checkout origin/master'
+
+alias gnb='git fetch; git checkout origin/master; git checkout -b'
+
 git config --global --add color.ui true
 
 # bundle shortcuts
@@ -50,7 +56,7 @@ then
 	alias icanhas='brew install'
 
 	# Homebrew
-	export PATH=/usr/local/bin:/usr/local/share/python:$PATH
+	export PATH=/usr/local/bin:$PATH
 
 	# Give me my Ctrl-S
 	stty -ixon -ixoff

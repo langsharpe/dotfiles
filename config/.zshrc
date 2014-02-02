@@ -35,6 +35,8 @@ git config --global --add color.ui true
 alias be='bundle exec'
 alias bi='bundle install'
 
+alias rspec='nocorrect rspec'
+
 # OS specific aliases
 if [ `uname` = "Darwin" ]
 then
@@ -67,17 +69,12 @@ fi
 #export VIRTUALENVWRAPPER_VIRTUALENV_ARGS="--system-site-packages"
 #export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
-# rbenv installation
-export PATH="/usr/local/sbin:/usr/local/bin:$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # Project specific
 
 # HomeMachine
 alias -g p='~/Dropbox/Projects'
 
 # EDH
-
 alias run_core_au='be script/server webrick -p 3000'
 alias run_core_uk='be script/server webrick -p 3100'
 alias run_admin_au='be script/server -p 3002'

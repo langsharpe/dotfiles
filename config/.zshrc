@@ -33,7 +33,9 @@ alias gf='git fetch'
 
 alias gom='git checkout origin/master'
 
-alias gnb='git fetch; git checkout origin/master; git checkout -b'
+alias gnb='git fetch && git checkout -q origin/master && git checkout -b'
+
+alias grm='git fetch && git rebase origin/master'
 
 git config --global --add color.ui true
 

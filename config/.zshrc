@@ -90,3 +90,5 @@ alias run_admin_uk='be script/server -p 3102'
 alias run_heroix_au='be script/server -p 3001'
 alias run_heroix_uk='be script/server -p 3101'
 
+alias done='terminal-notifier -message Done'
+

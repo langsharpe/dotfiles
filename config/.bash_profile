@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
+. ~/.bashrc
 . ~/.bash_profile_d/colors.bash
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
-
 
 # Prompt
 function parse_git_dirty {

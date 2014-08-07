@@ -62,6 +62,10 @@ alias gvim=mvim
 # Give me my Ctrl-S
 stty -ixon -ixoff
 
+# Tab completion
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
+
 # Project specific
 
 # HomeMachine

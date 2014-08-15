@@ -49,7 +49,7 @@ alias gnb='git fetch && git checkout -q origin/master && git checkout -b'
 alias grm='git fetch && git rebase origin/master'
 alias gd='git diff'
 git config --global --add color.ui true
-git config --global push.default matching
+git config --global push.default simple
 
 # Bundler Commands
 alias be='bundle exec'

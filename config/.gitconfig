@@ -1,0 +1,13 @@
+[core]
+	autocrlf = input
+	excludesfile = /Users/lang/.gitignore
+[user]
+	name = Lang Sharpe
+	email = langer8191@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+[push]
+	default = simple

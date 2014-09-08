@@ -30,7 +30,6 @@ alias gom='git checkout origin/master'
 alias gnb='git fetch && git checkout -q origin/master && git checkout -b'
 alias grm='git fetch && git rebase origin/master'
 alias gd='git diff'
-git config --global --add color.ui true
 
 # Bundler Commands
 alias be='bundle exec'

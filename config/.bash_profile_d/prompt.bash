@@ -7,3 +7,6 @@ function parse_git_branch {
 }
 
 PS1="${green}\w${bold_blue}(\$(parse_git_branch)\$(parse_git_dirty)${bold_blue})${reset_color} "
+
+# Set window title
+PS1="\[\033]0;\W\007\]$PS1"

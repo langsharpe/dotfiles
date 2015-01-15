@@ -59,7 +59,7 @@ set tabstop=4
 set softtabstop=4
 set noexpandtab
 
-" Remove any triling whitespace frmo every line
+" Remove any triling whitespace from every line
 autocmd BufWritePre * :%s/\s\+$//e
 
 " highlight search results
@@ -111,16 +111,6 @@ autocmd BufReadPost *
 " Cancel insert mode ofter 30 seconds
 au CursorHoldI * stopi
 set updatetime=30000
-
-" Disable the arrow keys
-inoremap  <Up>     <NOP>
-inoremap  <Down>   <NOP>
-inoremap  <Left>   <NOP>
-inoremap  <Right>  <NOP>
-noremap   <Up>     <NOP>
-noremap   <Down>   <NOP>
-noremap   <Left>   <NOP>
-noremap   <Right>  <NOP>
 
 " Make the cursor stay still when switching back to normal mode
 inoremap <silent> <Esc> <ESC>`^

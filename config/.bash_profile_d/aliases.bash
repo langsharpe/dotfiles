@@ -24,7 +24,7 @@ alias gnb='git fetch && git checkout -q origin/master && git checkout -b'
 alias grm='git fetch && git rebase origin/master'
 alias gd='git diff'
 
-# Bundler Commands
+# Bundler
 alias be='bundle exec'
 alias bi='bundle install'
 

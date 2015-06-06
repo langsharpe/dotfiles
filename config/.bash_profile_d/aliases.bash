@@ -35,3 +35,6 @@ alias gvim=mvim
 
 # Done
 alias done='terminal-notifier -message Done'
+
+# Sublime Text
+alias subl='open -a "Sublime Text"'

@@ -12,3 +12,6 @@ if [ -d "$HOME/Code/plain-utils/bin" ]
 then
   export PATH="$HOME/Code/plain-utils/bin:$PATH"
 fi
+
+export NVM_DIR="/Users/langs/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

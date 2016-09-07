@@ -5,7 +5,7 @@ export PATH="./bin:$HOME/bin:$PATH"
 
 if [ -d "/usr/local/opt/coreutils/libexec/gnubin" ]
 then
-  export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+  export PATH="$PATH:/usr/local/opt/coreutils/libexec/gnubin"
 fi
 
 if [ -d "$HOME/Code/plain-utils/bin" ]

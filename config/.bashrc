@@ -1,7 +1,11 @@
-export PATH="/usr/local/sbin:/usr/local/bin:$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
+export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 export PATH="./bin:$HOME/bin:$PATH"
+
+if [ -f "/usr/local/opt/chruby/share/chruby/chruby.sh" ]
+then
+  source /usr/local/opt/chruby/share/chruby/chruby.sh
+  source /usr/local/share/chruby/auto.sh
+fi
 
 if [ -d "/usr/local/opt/coreutils/libexec/gnubin" ]
 then

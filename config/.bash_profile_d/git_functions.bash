@@ -8,7 +8,7 @@ function git_recent_branches {
     sed -n '/[0-91-f]\{40\}/! p' |                           # not detatched commits
     grep -ve "^master$" |                                    # not master
     uniq |                                                   # not duplicated
-    head --lines 10                                          # only 10
+    head -n 10                                               # only 10
 }
 
 alias gre=git_recent_branches

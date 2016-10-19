@@ -9,7 +9,7 @@ fi
 
 if [ -d "/usr/local/opt/coreutils/libexec/gnubin" ]
 then
-  export PATH="$PATH:/usr/local/opt/coreutils/libexec/gnubin"
+  export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 fi
 
 if [ -d "$HOME/Code/plain-utils/bin" ]

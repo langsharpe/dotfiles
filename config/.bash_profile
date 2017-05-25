@@ -14,3 +14,5 @@
 
 # Give me my Ctrl-S
 stty -ixon -ixoff
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

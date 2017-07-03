@@ -38,3 +38,8 @@ then
   source ~/Code/batcave/.chruby/share/chruby/chruby.sh
   source ~/Code/batcave/.chruby/share/chruby/auto.sh
 fi
+
+if [ -d "$HOME/Code/batcave/plain-services-docker" ]
+then
+  export PATH=$PATH:~/Code/batcave/plain-services-docker/bin
+fi

@@ -31,6 +31,9 @@ brew "rabbitmq"
 brew "mas"
 brew "macvim"
 
+# webkit
+brew "qt"
+
 # fonts
 tap "caskroom/fonts"
 cask "font-inconsolata"
@@ -53,6 +56,11 @@ cask "SuperDuper"
 cask "google-chrome"
 cask "iTerm2"
 cask "moom"
+cask "Quitter"
+mas "DaisyDisk", id: 411643860
+mas "Soulver", id: 413965349
+cask "Dash"
+mas "Skitch", id: 425955336
 
 # Docker/dinghy
 tap "codekitchen/dinghy"

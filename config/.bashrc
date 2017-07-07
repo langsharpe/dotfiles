@@ -15,7 +15,7 @@ fi
 if [ -d "$HOME/.nvm" ]
 then
   export NVM_DIR="$HOME/.nvm"
-  source "$NVM_DIR/nvm.sh"
+  source "/usr/local/opt/nvm/nvm.sh"
 fi
 
 eval "$(direnv hook bash)"

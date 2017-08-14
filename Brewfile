@@ -33,6 +33,7 @@ brew "macvim"
 
 # webkit
 brew "qt"
+brew "chromedriver"
 
 # fonts
 tap "caskroom/fonts"
@@ -61,6 +62,7 @@ mas "DaisyDisk", id: 411643860
 mas "Soulver", id: 413965349
 cask "Dash"
 mas "Skitch", id: 425955336
+mas "Day One", id: 1055511498
 
 # Docker/dinghy
 tap "codekitchen/dinghy"

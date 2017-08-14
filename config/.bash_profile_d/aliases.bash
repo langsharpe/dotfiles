@@ -47,3 +47,6 @@ alias subl='open -a "Sublime Text"'
 # Cucumber
 alias ku='cucumber -f progress -f rerun --out tmp/cucumber.rerun'
 alias kure='cucumber -f progress @tmp/cucumber.rerun'
+
+# dinghy
+alias denv='$(dinghy env)'

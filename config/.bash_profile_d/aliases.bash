@@ -42,7 +42,7 @@ alias gvim=mvim
 alias done='terminal-notifier -message Done'
 
 # Sublime Text
-alias subl='open -a "Sublime Text"'
+alias subl='open -a "Sublime Text" --args'
 
 # Cucumber
 alias ku='cucumber -f progress -f rerun --out tmp/cucumber.rerun'

@@ -3,4 +3,10 @@ open -a Dropbox
 
 read -p "Login to Dropbox and Sync Settings and Apps. Press Enter when done:"
 
-#TODO start symlinking things
+# Alfred
+# TODO start symlinking things
+# Dash
+# Sublime Text 3
+# iterm2
+
+#moom

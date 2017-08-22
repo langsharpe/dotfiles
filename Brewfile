@@ -46,6 +46,7 @@ cask "1Password"
 cask "Dropbox"
 cask "Fantastical"
 cask "Firefox"
+cask "flash-npapi"
 cask "LICEcap"
 cask "OmniFocus"
 mas "Pixelmator", id: 407963104

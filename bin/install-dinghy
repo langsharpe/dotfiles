@@ -1,0 +1,2 @@
+
+dinghy create --provider virtualbox --memory=4096

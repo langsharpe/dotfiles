@@ -66,6 +66,7 @@ mas "Skitch", id: 425955336
 mas "Day One", id: 1055511498
 cask "Caffeine"
 cask "VyprVPN"
+mas "Kindle", id: 405399194
 
 # Docker/dinghy
 tap "codekitchen/dinghy"

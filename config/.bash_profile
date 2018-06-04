@@ -6,7 +6,6 @@
 
 . ~/.bash_profile_d/aliases.bash
 . ~/.bash_profile_d/git_functions.bash
-. ~/.bash_profile_d/everydayhero.bash
 . ~/.bash_profile_d/home.bash
 . ~/.bash_profile_d/prompt.bash
 . ~/.bash_profile_d/ssh_agent.bash

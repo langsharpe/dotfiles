@@ -19,27 +19,3 @@ then
 fi
 
 eval "$(direnv hook bash)"
-
-# everydayhero
-
-if [ -d "$HOME/Code/batcave/plain-utils/bin" ]
-then
-  export PATH="$HOME/Code/batcave/plain-utils/bin:$PATH"
-fi
-
-if [ -d "$HOME/Code/batcave/.nvm" ]
-then
-  export NVM_DIR="$HOME/Code/batcave/.nvm"
-  source "$NVM_DIR/nvm.sh"
-fi
-
-if [ -d "$HOME/Code/batcave/.chruby" ]
-then
-  source ~/Code/batcave/.chruby/share/chruby/chruby.sh
-  source ~/Code/batcave/.chruby/share/chruby/auto.sh
-fi
-
-if [ -d "$HOME/Code/batcave/plain-services-docker" ]
-then
-  export PATH=$PATH:~/Code/batcave/plain-services-docker/bin
-fi

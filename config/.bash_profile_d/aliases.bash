@@ -31,7 +31,7 @@ alias gunwip="git reset HEAD~ && git status --short"
 
 # Bundler
 alias be='bundle exec'
-alias bi='bundle check && bundle install'
+alias bi='bundle install'
 
 # Macvim
 alias vi='mvim -v'

@@ -50,3 +50,9 @@ alias kure='cucumber -f progress @tmp/cucumber.rerun'
 
 # dinghy
 alias denv='$(dinghy env)'
+
+# codemod
+alias codemod.rb="codemod --extensions=rb,erb,yml --editor='subl -n -w'"
+
+# rename
+alias rename.rb="find . \( -name '*.rb' -or -name '*.erb' -or -name '*.yml' \) -print0 | rename --stdin -0"

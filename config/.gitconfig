@@ -17,3 +17,7 @@
   conflictstyle = diff3
 [diff-so-fancy]
 	markEmptyLines = false
+[alias]
+	follow = log -p -M --follow --stat --
+[rebase]
+	autosquash = true

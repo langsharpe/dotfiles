@@ -25,3 +25,5 @@ then
   source "$HOME/.asdf/asdf.sh"
   source "$HOME/.asdf/completions/asdf.bash"
 fi
+
+export PATH="/Applications/Postgres.app/Contents/Versions/10/bin:$PATH"

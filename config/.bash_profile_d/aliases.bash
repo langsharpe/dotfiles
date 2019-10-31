@@ -30,6 +30,9 @@ alias gpu="git push --set-upstream origin \$(prompt_git_branch)"
 alias gwip="git add . && git commit --all -m 'WIP'"
 alias gunwip="git reset HEAD~ && git status --short"
 
+# Ruby
+alias gapr="rubocop -a; gap"
+
 # Bundler
 alias be='bundle exec'
 alias bi='bundle install'
@@ -57,3 +60,6 @@ alias codemod.rb="codemod --extensions=rb,erb,yml --editor='subl -n -w'"
 
 # rename
 alias rename.rb="find . \( -name '*.rb' -or -name '*.erb' -or -name '*.yml' \) -print0 | rename --stdin -0"
+
+# Brew
+alias brewup="brew upgrade"

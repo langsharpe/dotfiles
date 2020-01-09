@@ -12,7 +12,7 @@
 	branch = auto
 	ui = true
 [push]
-	default = simple
+	default = current
 [merge]
   conflictstyle = diff3
 [diff-so-fancy]

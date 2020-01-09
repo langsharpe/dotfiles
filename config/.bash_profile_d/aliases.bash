@@ -26,7 +26,7 @@ alias ggg='git log --graph --oneline --decorate -n 20'
 alias gnb='git fetch && git checkout -q origin/master && git checkout -b'
 alias grm='git fetch && git rebase origin/master'
 alias gd='git diff'
-alias gpu="git push --set-upstream origin \$(prompt_git_branch)"
+alias gpu='git push'
 alias gwip="git add . && git commit --all -m 'WIP'"
 alias gunwip="git reset HEAD~ && git status --short"
 

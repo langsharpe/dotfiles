@@ -5,6 +5,7 @@
 . ~/.bash_profile_d/colors.bash
 
 . ~/.bash_profile_d/aliases.bash
+. ~/.bash_profile_d/configuration.bash
 . ~/.bash_profile_d/git_functions.bash
 . ~/.bash_profile_d/home.bash
 . ~/.bash_profile_d/prompt.bash

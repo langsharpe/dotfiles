@@ -18,6 +18,10 @@ brew "watch"
 brew "wdiff"
 brew "wget"
 
+brew "hivemind"
+brew "overmind"
+cask "ngrok"
+
 # services
 # brew "postgres"
 brew "redis"
@@ -28,14 +32,13 @@ brew "macvim"
 
 # webkit
 brew "qt"
-brew "chromedriver"
+cask "chromedriver"
 
 # fonts
-tap "caskroom/fonts"
+tap "homebrew/cask-fonts"
 cask "font-inconsolata"
 
 # Apps
-tap "caskroom/cask"
 cask "1Password"
 #cask "Alfred"
 cask "Dropbox"
@@ -58,5 +61,9 @@ cask "Dash"
 mas "Skitch", id: 425955336
 mas "Day One", id: 1055511498
 mas "Kindle", id: 405399194
+cask "Figma"
+cask "Sip"
 
 brew "diff-so-fancy"
+brew "tldr"
+brew "less"

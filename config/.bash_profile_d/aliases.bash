@@ -23,10 +23,10 @@ alias gap='git add -p'
 alias gri='git rebase -i'
 alias gg='git log --graph --oneline --decorate -n 8'
 alias ggg='git log --graph --oneline --decorate -n 20'
-alias gnb='git fetch && git checkout -q origin/master && git checkout -b'
-alias grm='git fetch && git rebase origin/master'
+alias gnb='hub sync && git checkout -q origin/master && git checkout -b'
+alias grm='hub sync && git rebase origin/master'
 alias gd='git diff'
-alias gpu='git push'
+alias gpu='git push --set-upstream'
 alias gwip="git add . && git commit --all -m 'WIP'"
 alias gunwip="git reset HEAD~ && git status --short"
 
@@ -42,8 +42,8 @@ alias vi='mvim -v'
 alias vim='mvim -v'
 alias gvim=mvim
 
-# Done
-alias done='terminal-notifier -message Done'
+# # Done
+# alias done='terminal-notifier -message Done'
 
 # Sublime Text
 alias subl='open -a "Sublime Text"'

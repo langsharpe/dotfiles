@@ -1,3 +1,5 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 export PATH="./bin:$HOME/bin:$PATH"
 

@@ -21,3 +21,5 @@
 	follow = log -p -M --follow --stat --
 [rebase]
 	autosquash = true
+[init]
+	defaultBranch = main

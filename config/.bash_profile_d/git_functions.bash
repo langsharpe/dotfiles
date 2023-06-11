@@ -1,7 +1,3 @@
-function git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/"
-}
-
 function git_recent_branches {
   git reflog |                                               # recent git activity
     sed -n 's/^.*checkout: moving from \(.*\) to .*$/\1/p' | # branch switches

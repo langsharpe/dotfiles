@@ -4,21 +4,6 @@ set nocompatible
 " Set the leader character to comma
 let mapleader = ","
 
-""""" Vundle installation
-filetype on
-filetype off
-set rtp+=~/.vundle/vundle
-call vundle#rc('~/.vundle/')
-
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-rails'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'git://git.wincent.com/command-t.git'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-surround'
-Bundle 'ack.vim'
-
 " status line from destroyallsoftware.com
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
@@ -36,12 +21,6 @@ inoremap <s-tab> <c-n>
 
 " Ignore source control directories in auto completion (thanks @nippysaurus)
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|svn)$'
-
-" Command-T Fix the height of the file window
-let g:CommandTMaxHeight = 20
-let g:CommandTMinHeight = 20
-
-set wildignore+=build/*,dist/*,*.pyc,*.png,*.jpg,*.dia,*.
 
 " Turn on filetype indenting and specific settings
 filetype indent on
@@ -78,12 +57,8 @@ let html_no_rendering=1
 syntax on
 
 " Use a vertical line in insert mode
-
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-
-" Use ctags
-set tags =~/ctags
 
 " Create a guideline on the 81st character
 set colorcolumn=81
@@ -92,21 +67,6 @@ hi ColorColumn ctermbg=lightgrey
 " Keep text in the same place when spliting a window
 set splitbelow
 set splitright
-
-" Tell vim to remember certain things when we exit
-"  '10  :  marks will be remembered for up to 10 previously edited files
-"  "100 :  will save up to 100 lines for each register
-"  :20  :  up to 20 lines of command-line history will be remembered
-"  %    :  saves and restores the buffer list
-"  n... :  where to save the viminfo files
-set viminfo='10,\"100,:20,%,n~/.viminfo
-
-autocmd BufReadPost *
-	\ if line("'\"") > 0 && line("'\"") <= line("$") |
-	\	exe "normal g`\"" |
-	\ endif
-
-" Mad vi tinkering
 
 " Cancel insert mode ofter 30 seconds
 au CursorHoldI * stopi
@@ -128,13 +88,3 @@ noremap <C-l> w
 
 noremap <Leader>h ^
 noremap <Leader>l $
-
-" Filetypes
-au BufNewFile,BufRead *.mako set ft=mako
-
-" Solarized color scheme
-set background=dark
-let g:solarized_termcolors=16
-set t_Co=16
-colorscheme solarized
-

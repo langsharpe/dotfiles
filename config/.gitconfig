@@ -2,10 +2,9 @@
 	autocrlf = input
 	excludesfile = ~/.gitignore
 	pager = diff-so-fancy | less --tabs=4 -RFX
-	editor = subl -n -w
 [user]
 	name = Lang Sharpe
-	email = lang.sharpe@fivegoodfriends.com.au
+	email = langer8191@gmail.com
 [color]
 	diff = auto
 	status = auto

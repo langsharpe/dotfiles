@@ -1,5 +1,0 @@
-#!/bin/sh
-if [ ! -e ~/.vundle/vundle ]
-then
-  git clone https://github.com/gmarik/vundle.git ~/.vundle/vundle
-fi

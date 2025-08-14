@@ -33,3 +33,6 @@ alias bi='bundle install'
 
 # Brew
 alias brewup="brew upgrade"
+
+# Less
+alias less='less -R'

@@ -5,6 +5,7 @@
 [user]
 	name = Lang Sharpe
 	email = langer8191@gmail.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINubQilDH2blUOEMF2vLuINucNjNTFQUw3UCPnM8su+t
 [color]
 	diff = auto
 	status = auto
@@ -22,3 +23,9 @@
 	autosquash = true
 [init]
 	defaultBranch = main
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = false

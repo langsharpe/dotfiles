@@ -5,6 +5,7 @@
 .idea
 .nova
 .vscode
+.zed
 
 # Icon must end with two \r
 Icon

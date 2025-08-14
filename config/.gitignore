@@ -32,3 +32,7 @@ Temporary Items
 # local temporary files
 .TODO.md
 .scratch.rb
+
+# AI
+CLAUDE.md
+.claude/**
